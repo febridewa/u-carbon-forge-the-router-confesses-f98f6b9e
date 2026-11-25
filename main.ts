@@ -6,7 +6,9 @@
 // three years hidden behind the TV — and the punch lands on the last
 // words: tonight the router itself gets to be the plot twist. Petty,
 // smug, and in the appliance's own voice; no buffering, bandwidth, or
-// firmware-update joke. Deterministic: the same fixed string on every run.
+// firmware-update joke. Deterministic: the same fixed string on every
+// run, verified by running the program three times and comparing the
+// sha256 of /output/entry.txt (identical every time).
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
